@@ -1,0 +1,88 @@
+{
+    "settings": {
+        "batch_size": {
+            "train": 2,
+            "val": 1
+        },
+        "bn_momentum": 0.01,
+        "dataset_tags": {
+            "train": "train",
+            "val": "val"
+        },
+        "data_workers": {
+            "train": 2,
+            "val": 1
+        },
+        "enable_augmentations": false,
+        "epochs": 15,
+        "gpu_devices": [
+            0
+        ],
+        "input_size": {
+            "width": 960,
+            "height": 960
+        },
+        "lr": 0.0001,
+        "print_every_iter": 5,
+        "subdivisions": {
+            "train": 1,
+            "val": 1
+        },
+        "weights_init_type": "transfer_learning",
+        "checkpoint_every": 1,
+        "recompute_anchors": false
+    },
+    "out_classes": [
+        {
+            "title": "bee-worker",
+            "shape": "rectangle",
+            "color": "#27B040",
+            "geometry_config": {}
+        },
+        {
+            "title": "brood",
+            "shape": "rectangle",
+            "color": "#FF0012",
+            "geometry_config": {}
+        },
+        {
+            "title": "brood-capped",
+            "shape": "rectangle",
+            "color": "#F8B91C",
+            "geometry_config": {}
+        },
+        {
+            "title": "drone",
+            "shape": "rectangle",
+            "color": "#5B25B1",
+            "geometry_config": {}
+        },
+        {
+            "title": "drone-brood-capped",
+            "shape": "rectangle",
+            "color": "#BD10E0",
+            "geometry_config": {}
+        },
+        {
+            "title": "pollen",
+            "shape": "rectangle",
+            "color": "#7ED321",
+            "geometry_config": {}
+        },
+        {
+            "title": "honey",
+            "shape": "rectangle",
+            "color": "#F5A623",
+            "geometry_config": {}
+        }
+    ],
+    "class_title_to_idx": {
+        "bee-worker": 0,
+        "brood": 1,
+        "brood-capped": 2,
+        "drone": 3,
+        "drone-brood-capped": 4,
+        "honey": 5,
+        "pollen": 6
+    }
+}
